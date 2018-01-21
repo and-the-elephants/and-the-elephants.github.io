@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons%7CDroid+Serif%7CLato:300,400%7CEB+Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    {% seo %}
+  </head>
+  <body>
+    <header>
+      <nav class="nav-center white">
+        <div class="black-text nav-wrapper">
+          <!-- <a href="#" class="brand-logo">Logo</a> -->
+          <ul id="nav-mobile" class="hide-on-med-and-down">
+            <!-- <li><a href="">Home</a></li> -->
+            <!-- <li><a href="about.html">About</a></li> -->
+            <li><a href="music.html">Music</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer class="page-footer white">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <ul class="col s4 offset-s4 left valign-wrapper">
+              <li class="left col s3">
+                <a href="https://www.facebook.com/andtheelephants" >
+                  <img class="responsive-img to-black-invert" alt="Facebook Page" src="assets/img/facebook-icon.png">
+                </a>
+              </li>
+              <li class="col s3 left">
+                <a href="https://www.instagram.com/andtheelephants/">
+                  <img class="responsive-img" alt="Instagram Page" src="assets/img/instagram-icon.png">
+                </a>
+              </li>
+              <li class="col s3 left">
+                <a href="https://twitter.com/AndTheElephants">
+                  <img class="responsive-img to-black-invert" alt="Twitter Page" src="assets/img/twitter-icon.png">
+                </a>
+              </li>
+              <li class="col s3 left">
+                <a href="https://www.youtube.com/channel/UCijafLtIiZUJXXMekl40-mw">
+                  <img class="responsive-img to-black" alt="Youtube Channel" src="assets/img/youtube-icon.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright center-align white grey-text text-lighten-1 small">
+        <div class="container">
+        © 2018 And The Elephants
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+    <script src="{{ '/assets/js/script.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+  </body>
+</html>
