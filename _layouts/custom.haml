@@ -1,0 +1,43 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons%7CDroid+Serif%7CLato:300,400%7CEB+Garamond", rel: "stylesheet"}
+    %link{href: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css", rel: "stylesheet"}
+    {%- assign style_asset = '/assets/css/style.css?v=' %}
+    %link{href: "{{ style_asset | append: site.github.build_revision | relative_url }}", rel: "stylesheet", type: "text/css"}
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    {% seo %}
+    {% favicon %}
+  %body
+    %header
+      %nav.nav-center.white
+        .black-text.nav-wrapper
+          %ul#nav-mobile.hide-on-med-and-down
+            %li
+              %a{href: "music.html"} Music
+    %main
+      {{ content }}
+    %footer.page-footer.white
+      .container
+        .row
+          .col.s12
+            %ul.col.s4.offset-s4.left.valign-wrapper
+              %li.left.col.s3
+                %a{href: "https://www.facebook.com/andtheelephants"}
+                  %img.responsive-img.to-black-invert{alt: "Facebook Page", src: "assets/img/facebook-icon.png"}
+              %li.col.s3.left
+                %a{href: "https://www.instagram.com/andtheelephants/"}
+                  %img.responsive-img{alt: "Instagram Page", src: "assets/img/instagram-icon.png"}
+              %li.col.s3.left
+                %a{href: "https://twitter.com/AndTheElephants"}
+                  %img.responsive-img.to-black-invert{alt: "Twitter Page", src: "assets/img/twitter-icon.png"}
+              %li.col.s3.left
+                %a{href: "https://www.youtube.com/channel/UCijafLtIiZUJXXMekl40-mw"}
+                  %img.responsive-img.to-black{alt: "Youtube Channel", src: "assets/img/youtube-icon.png"}
+      .footer-copyright.center-align.white.grey-text.text-lighten-1.small
+        .container
+          © 2018 And The Elephants
+    %script{src: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"}
+    {%- assign script_asset = '/assets/javascript/script.js?v=' %}
+    %script{src: "{{ script_asset | append: site.github.build_revision | relative_url }}"}
