@@ -21,3 +21,11 @@ defaults:
       layout: custom
 plugins:
   - jekyll-sitemap
+
+exclude:
+  - .gitignore
+  - .ruby-version
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - docs
