@@ -7192,11 +7192,19 @@ nav.nav-center ul {
 nav.nav-center ul li {
   display: inline;
   float: none; }
+  nav.nav-center ul li a {
+    color: black; }
+    nav.nav-center ul li a:hover {
+      background-color: transparent;
+      color: grey; }
+  nav.nav-center ul li.active {
+    background-color: transparent; }
+    nav.nav-center ul li.active a {
+      color: grey; }
 
 nav.nav-center ul li a {
-  display: inline-block;
-  color: black; }
-  nav.nav-center ul li a :hover {
+  display: inline-block; }
+  nav.nav-center ul li a:hover {
     color: grey; }
 
 footer img.to-black {
