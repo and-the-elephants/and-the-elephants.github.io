@@ -49,11 +49,23 @@ nav.nav-center ul {
 nav.nav-center ul li {
     display: inline;
     float: none;
+    a {
+      color: black;
+      &:hover {
+        background-color: transparent;
+        color: grey;
+      }
+    }
+    &.active {
+      background-color: transparent;
+      a {
+        color: grey;
+      }
+    }
 }
 nav.nav-center ul li a {
     display: inline-block;
-    color: black;
-    :hover {
+    &:hover {
       color: grey;
     }
 }

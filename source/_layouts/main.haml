@@ -4,15 +4,17 @@
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
     %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons%7CDroid+Serif%7CLato:300,400%7CEB+Garamond", rel: "stylesheet"}
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
-    {% asset style-main.css %}
     {% seo %}
+    {% asset style-main.css %}
     {% favicon %}
   %body
     %nav.nav-center.white
-      .black-text.nav-wrapper
-        %ul#nav-mobile.hide-on-med-and-down
-          %li
-            %a{href: '/'} Music
+      .nav-wrapper
+        %ul#nav-mobile
+          %li(class="{% if page.active == 'home' %}active{% endif %}")
+            %a{href: '/'} Home
+          %li(class="{% if page.active == 'music' %}active{% endif %}")
+            %a{href: '/music/'} Music
     %header
       %h1 And The Elephants
     %main

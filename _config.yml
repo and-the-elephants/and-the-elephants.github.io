@@ -1,7 +1,7 @@
 title: And The Elephants
 email: contact@andtheelephants.com
 description: >-
-  We are an alternative and conceptual band, based in Santiago, Chile. Our first LP &quot;The Procession&quot; is the result of more than three years in a search for a unique concept and sound.
+  We are an alternative rock band based in Santiago, Chile. Our first LP &quot;The Procession&quot; is the result of more than three years in a search for a unique concept and sound.
 baseurl: ""
 url: https://andtheelephants.com
 twitter:
@@ -11,9 +11,8 @@ social:
   links:
     - https://twitter.com/AndTheElephants
     - https://www.facebook.com/andtheelephants
-    - https://www.instagram.com/andtheelephants
+    - https://www.instagram.com/andtheelephants/
     - https://andtheelephants.bandcamp.com
     - https://www.youtube.com/channel/UCijafLtIiZUJXXMekl40-mw
-
 source: source
 destination: docs
