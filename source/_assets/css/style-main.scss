@@ -1,0 +1,69 @@
+---
+---
+@import 'materialize/materialize';
+@import 'components/fonts';
+@import 'components/overrides';
+
+header > h1 {
+  text-align: center;
+  font-family: $font-eb-garamond;
+  text-transform: uppercase;
+}
+
+.closer {
+  margin-bottom: 0;
+}
+
+article.album {
+  text-align: center;
+  background-color: rgba(255, 255, 254, 0.9);
+  margin-top: 5rem;
+  padding-bottom: 2rem !important;
+  h2 {
+    font-family: $font-lato;
+    font-weight: lighter;
+    font-size: 1.7rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+  }
+  p.year {
+    font-family: $font-lato;
+    font-weight: lighter;
+    letter-spacing: 0.6rem;
+    font-size: 1rem;
+  }
+  p.description {
+    font-family: $font-eb-garamond;
+    text-align: center;
+  }
+}
+
+nav {
+  font-family: $font-droid-serif;
+  text-transform: uppercase;
+}
+
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+    color: black;
+    :hover {
+      color: grey;
+    }
+}
+
+footer {
+  img.to-black{
+    filter: saturate(0%) brightness(70%) contrast(1000%);
+  }
+
+  img.to-black-invert {
+    filter: saturate(0%) brightness(70%) contrast(1000%) invert(100%);
+  }
+}

@@ -7,4 +7,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '~> 1.2'
   gem 'jekyll-favicon', '~> 0.1.0'
   gem 'jekyll-haml-markup', '~> 0.1.0'
+  gem 'jekyll-assets', '~> 3.0', '>= 3.0.8'
+  gem 'jekyll-coffeescript', '~> 1.1', '>= 1.1.1'
 end

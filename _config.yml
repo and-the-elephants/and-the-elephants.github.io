@@ -1,31 +1,19 @@
-title: And The Elephants Banda Chilena de Rock Alternativo y Conceptual
-description: >
-    And The Elephants banda de rock basada en Santiago de Chile. Su primer LP &quot;The Procession&quot; es el resultado de cerca de tres a&ntilde;os en b&uacute;squeda de un sonido &uacute;nico.
-url: https://andtheelephants.com
+title: And The Elephants
+email: contact@andtheelephants.com
+description: >-
+  We are an alternative and conceptual band, based in Santiago, Chile. Our first LP &quot;The Procession&quot; is the result of more than three years in a search for a unique concept and sound.
 baseurl: ""
-logo: andtheelephants.<b>com</b>
-owner:
-  email: contact@andtheelephants.com
-  facebook:
-    show: true
-    name: And The Elephants
-    url: http://facebook.com/andtheelephants
-sass:
-  sass_dir: _sass
-  style: compressed
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: custom
-plugins:
-  - jekyll-sitemap
+url: https://andtheelephants.com
+twitter:
+  username: AndTheElephants
+social:
+  name: And The Elephants
+  links:
+    - https://twitter.com/AndTheElephants
+    - https://www.facebook.com/andtheelephants
+    - https://www.instagram.com/andtheelephants
+    - https://andtheelephants.bandcamp.com
+    - https://www.youtube.com/channel/UCijafLtIiZUJXXMekl40-mw
 
-exclude:
-  - .gitignore
-  - .ruby-version
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - docs
+source: source
+destination: docs
