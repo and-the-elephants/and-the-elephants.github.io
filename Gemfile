@@ -9,4 +9,5 @@ group :jekyll_plugins do
   gem 'jekyll-haml-markup', '~> 0.1.0'
   gem 'jekyll-assets', '~> 3.0', '>= 3.0.8'
   gem 'jekyll-coffeescript', '~> 1.1', '>= 1.1.1'
+  gem 'uglifier', '~> 4.1', '>= 4.1.5'
 end
