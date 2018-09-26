@@ -1,0 +1,14 @@
+---
+layout: main
+title: releases
+---
+{% for post in site.categories.releases %}
+.row.parallax-container.closer
+  .col.l8.offset-l2.s12
+    %article.album.col.s12.l10.offset-l1
+      %h2.col.s12 {{ post.title }}
+      %p.year.col.s12 {{ post.date | date: '%Y' }}
+      {{ post.content }}
+  .parallax
+    {% img '{{ post.background }}' %}
+{% endfor %}
