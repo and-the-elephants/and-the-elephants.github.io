@@ -8,6 +8,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-assets'
   gem 'jekyll-coffeescript'
-  gem 'jekyll-haml-markup'
+  gem 'jekyll-haml-markup', '~> 0.1.3'
   gem 'jekyll-favicon', '~> 0.2.3'
 end
