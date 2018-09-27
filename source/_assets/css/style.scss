@@ -1,78 +1,86 @@
 @import 'materialize/materialize';
 @import 'components/fonts';
 @import 'components/overrides';
-
+nav {
+  font-family: $font-droid-serif;
+  text-transform: uppercase;
+  &.nav-center ul {
+      text-align: center;
+  }
+  &.nav-center ul li {
+      display: inline;
+      float: none;
+      a {
+        color: black;
+        &:hover {
+          background-color: transparent;
+          color: grey;
+        }
+      }
+      &.active {
+        background-color: transparent;
+        a {
+          color: grey;
+        }
+      }
+  }
+  &.nav-center ul li a {
+      display: inline-block;
+      &:hover {
+        color: grey;
+      }
+  }
+}
 header > h1 {
   text-align: center;
   font-family: $font-eb-garamond;
   text-transform: uppercase;
 }
-
-.closer {
-  margin-bottom: 0;
-}
-
-article.album {
-  text-align: center;
-  background-color: rgba(255, 255, 254, 0.9);
-  margin-top: 5rem;
-  padding-bottom: 2rem !important;
-  h2 {
-    font-family: $font-lato;
-    font-weight: lighter;
-    font-size: 1.7rem;
-    letter-spacing: 0.4rem;
-    text-transform: uppercase;
+main {
+  header {
+    h2 {
+      font-family: $font-eb-garamond;
+      text-align: center;
+    }
   }
-  p.year {
-    font-family: $font-lato;
-    font-weight: lighter;
-    letter-spacing: 0.6rem;
-    font-size: 1rem;
-  }
-  p.description {
-    font-family: $font-eb-garamond;
-    text-align: center;
-  }
-}
-
-nav {
-  font-family: $font-droid-serif;
-  text-transform: uppercase;
-}
-
-nav.nav-center ul {
-    text-align: center;
-}
-nav.nav-center ul li {
-    display: inline;
-    float: none;
-    a {
-      color: black;
-      &:hover {
-        background-color: transparent;
-        color: grey;
+  .releases {
+    .release {
+      @extend .row, .parallax-container, .valign-wrapper;
+      .post {
+        @extend .col, .l8, .offset-l2, .s12;
+        text-align: center;
+        background-color: rgba(255, 255, 254, 0.9);
+        padding: 2rem;
+        h3 {
+          font-family: $font-lato;
+          font-weight: lighter;
+          font-size: 1.7rem;
+          letter-spacing: 0.4rem;
+          text-transform: uppercase;
+          padding-bottom: 2rem;
+        }
+        p {
+          font-family: $font-eb-garamond;
+          text-align: center;
+          padding-bottom: 2rem;
+        }
+        p.year {
+          font-family: $font-lato;
+          font-weight: lighter;
+          letter-spacing: 0.6rem;
+          padding-bottom: 2rem;
+        }
+        iframe {
+          border: 0; width: 80%; height: 42px;
+        }
       }
     }
-    &.active {
-      background-color: transparent;
-      a {
-        color: grey;
-      }
-    }
+  }
 }
-nav.nav-center ul li a {
-    display: inline-block;
-    &:hover {
-      color: grey;
-    }
-}
-
 footer {
   img.to-black{
     filter: saturate(0%) brightness(70%) contrast(1000%);
   }
-
   img.to-black-invert {
     filter: saturate(0%) brightness(70%) contrast(1000%) invert(100%);
   }
