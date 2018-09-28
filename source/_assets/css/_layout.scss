@@ -1,0 +1,42 @@
+body {
+  display: grid;
+  max-width: 100%;
+  .site-nav {
+    max-width: 100%;
+  }
+  .site-header {
+    max-width: 100%;
+  }
+  .site-main {
+    max-width: 100%;
+    .iframe-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%;
+      iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .basecamp-slim {
+      border: 0;
+      width: 100%;
+      height: 42px;
+    }
+  }
+  .site-footer {
+    max-width: 100%;
+    .social-nav {
+      .social-links {
+        .item {
+          img {
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

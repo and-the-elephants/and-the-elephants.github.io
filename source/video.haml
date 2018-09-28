@@ -2,9 +2,10 @@
 layout: main
 title: Video
 ---
-%header
-  %h2 Official video releases
+%header.page-header
+  %h2 {{ page.title }}
 {% for post in site.categories.video %}
-.row
-  {{ post.content }}
+.posts.videos
+  .post.video
+    {{ post.content }}
 {% endfor %}

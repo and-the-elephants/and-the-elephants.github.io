@@ -2,16 +2,15 @@
 layout: main
 title: Releases
 ---
-%header
+%header.page-header
   %h2 {{ page.title }}
-.releases
+.posts.releases
   {% for post in site.categories.releases %}
-  .release
-    .post
-      %header
+  %article.post.release.jarallax
+    {% img '{{ post.background }}' class:jarallax-img %}
+    .post-content
+      %header.post-header
         %h3 {{ post.title }}
-        %p.year {{ post.date | date: '%Y' }}
+      %time {{ post.date | date: '%Y' }}
       {{ post.content }}
-    .parallax
-      {% img '{{ post.background }}' %}
   {% endfor %}

@@ -1,45 +1,40 @@
 !!!
-%html{lang: "en"}
+%html{lang: 'en'}
   %head
-    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
-    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons%7CDroid+Serif%7CLato:300,400%7CEB+Garamond", rel: "stylesheet"}
-    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    %meta{content: 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type'}
+    %link{href: 'https://fonts.googleapis.com/icon?family=Lato:300,400%7CEB+Garamond:100,400', rel: 'stylesheet'}
+    %meta{content: 'width=device-width, initial-scale=1.0', name: 'viewport'}
     {% seo %}
-    {% css style %}
+    {% css site %}
     {% favicon %}
   %body
-    %nav.nav-center.white
-      .nav-wrapper
-        %ul#nav-mobile
-          {% for item in site.pages %}
-          {% if item.layout == 'main' %}
-          %li(class="{% if item.url == page.url %}active{% endif %}")
-            %a{href: '{{ item.url }}'} {{ item.title }}
-          {% endif %}
-          {% endfor %}
-    %header
+    %nav.site-nav
+      %ul.site-links
+        {% for item in site.pages %}
+        {% if item.layout == 'main' %}
+        %li{class: 'item {% if item.url == page.url %}active{% endif %}'}
+          %a{href: '{{ item.url }}'} {{ item.title }}
+        {% endif %}
+        {% endfor %}
+    %header.site-header
       %h1 And The Elephants
-    %main
+    %main.site-main
       {{ content }}
-    %footer.page-footer.white
-      .container
-        .row
-          .col.s12
-            %ul.col.m4.offset-m4.left.valign-wrapper
-              %li.left.col.s3
-                %a{href: "https://www.facebook.com/andtheelephants"}
-                  %img.responsive-img.to-black-invert(alt='Facebook Page' src='{% asset_path facebook-icon.png %}')
-              %li.col.s3.left
-                %a{href: "https://www.instagram.com/andtheelephants/"}
-                  %img.responsive-img(alt='Instagram Page' src='{% asset_path instagram-icon.png %}')
-              %li.col.s3.left
-                %a{href: "https://twitter.com/AndTheElephants"}
-                  %img.responsive-img.to-black-invert(alt='Twitter Page' src='{% asset_path twitter-icon.png %}')
-              %li.col.s3.left
-                %a{href: "https://www.youtube.com/channel/UCijafLtIiZUJXXMekl40-mw"}
-                  %img.responsive-img.to-black(alt='Youtube Channel' src='{% asset_path youtube-icon.png %}')
-      .footer-copyright.center-align.white.grey-text.text-lighten-1.small
-        .container
-          © 2018 And The Elephants
-    {% js materialize/bin/materialize %}
+    %footer.site-footer
+      %nav.social-nav
+        %ul.social-links
+          %li.item
+            %a{href: "https://www.facebook.com/andtheelephants"}
+              %img.facebook(alt='Facebook Page' src='{% asset_path facebook-icon.png %}')
+          %li.item
+            %a{href: "https://www.instagram.com/andtheelephants/"}
+              %img.instagram(alt='Instagram Page' src='{% asset_path instagram-icon.png %}')
+          %li.item
+            %a{href: "https://twitter.com/AndTheElephants"}
+              %img.twitter(alt='Twitter Page' src='{% asset_path twitter-icon.png %}')
+          %li.item
+            %a{href: "https://www.youtube.com/channel/UCijafLtIiZUJXXMekl40-mw"}
+              %img.youtube(alt='Youtube Channel' src='{% asset_path youtube-icon.png %}')
+      %small © 2018 And The Elephants
+    <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
     {% js script %}
