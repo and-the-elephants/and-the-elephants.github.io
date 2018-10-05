@@ -37,7 +37,7 @@ GEM
     jekyll-coffeescript (1.1.1)
       coffee-script (~> 2.2)
       coffee-script-source (~> 1.11.1)
-    jekyll-favicon (0.2.3)
+    jekyll-favicon (0.2.4)
       jekyll (~> 3.0)
       mini_magick (~> 4.5)
     jekyll-haml-markup (0.1.3)
