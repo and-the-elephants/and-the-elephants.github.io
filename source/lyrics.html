@@ -1,0 +1,35 @@
+---
+layout: main
+title: Lyrics
+---
+<header class='page-header'>
+  <h2>{{ page.title }}</h2>
+</header>
+<div class='posts lyrics'>
+  <nav class='lyrics-nav'>
+    <ul class='lyrics-links'>
+      {% assign albums = 'Masks; The Procession; Castor, Pollux' | split: '; ' %}
+      {% for album in albums %}
+      <li class='item' data-target='{{ album | slugify }}'><a href='#'>{{ album }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% assign albums = 'The Procession; Masks; Castor, Pollux' | split: '; ' %}
+  {% for album in albums %}
+  {% assign album-handle = (album | slugify) %}
+  <section class='post album' id="{{ album-handle }}">
+    <h3>{{ album }}</h3>
+    {% assign songs = (site.data.lyrics[album-handle] | keys) | sort %}
+    {% for song_hash in songs %}
+    {% assign song = song_hash[1] %}
+    <article class='song'>
+      <h4>{{ song.name }}</h4>
+      {% for section in song.lyrics.sections %}
+      <p class='section'>{{ section | newline_to_br }}</p>
+      {% endfor %}
+    </article>
+    <hr>
+    {% endfor %}
+  </section>
+  {% endfor %}
+</div>

@@ -88,6 +88,55 @@ html {
           }
         }
       }
+      .lyrics {
+        .lyrics-nav {
+          height: 64px;
+          text-align: center;
+          .lyrics-links {
+            display: inline-flex;
+            height: 100%;
+            .item {
+              align-self: center;
+              margin: 0 1rem;
+              &.active {
+                a {
+                  color: black;
+                }
+              }
+            }
+          }
+        }
+        .album {
+          display: none;
+          h3 {
+            font-family: $font-eb-garamond;
+            margin-bottom: 1rem;
+          }
+          hr:after {
+              content: '§';
+              display: inline-block;
+              position: relative;
+              font-size: 1rem;
+          }
+          .song {
+            h4 {
+              font-family: $font-eb-garamond;
+              margin-bottom: 1rem;
+              margin-top: 1rem;
+              font-weight: lighter;
+              font-size: small;
+              letter-spacing: 0.4rem;
+              text-transform: uppercase;
+            }
+            .section {
+              margin-bottom: 1rem;
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+      }
     }
     .site-footer {
       padding: 1rem;
