@@ -113,7 +113,7 @@ html {
             margin-bottom: 1rem;
           }
           hr:after {
-              content: '§';
+              content: '\00A7';
               display: inline-block;
               position: relative;
               font-size: 1rem;
