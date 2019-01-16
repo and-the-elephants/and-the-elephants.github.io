@@ -9,6 +9,7 @@ variables:
 before_script:
 - apt-get update -yq
 - apt-get install -y nodejs
+- gem update --system && gem install bundler --no-rdoc --no-ri
 - bundle install
 
 test:
