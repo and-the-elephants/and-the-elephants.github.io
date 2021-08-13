@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 3.2.0'
+gem 'jekyll', '~> 3.6.0'
 gem 'uglifier'
 
 group :jekyll_plugins do
