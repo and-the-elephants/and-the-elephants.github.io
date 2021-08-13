@@ -1,0 +1,18 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.191.0/containers/jekyll
+{
+	"name": "Jekyll",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"INSTALL_NODE": "true",
+			"NODE_VERSION": "lts/*",
+			"VARIANT": "2.7",
+		}	
+	},
+	"settings": {},
+	"extensions": [],
+	"forwardPorts": [ 4000, 35729 ],
+	"postCreateCommand": "sh .devcontainer/post-create.sh",
+	"remoteUser": "vscode"
+}
