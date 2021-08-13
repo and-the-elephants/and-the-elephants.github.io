@@ -9,5 +9,5 @@ group :jekyll_plugins do
   gem 'jekyll-assets'
   gem 'jekyll-coffeescript'
   gem 'jekyll-haml-markup', '~> 0.1.3'
-  gem 'jekyll-favicon', '~> 0.2.5'
+  gem 'jekyll-favicon', '~> 1.0.0.pre.3'
 end
