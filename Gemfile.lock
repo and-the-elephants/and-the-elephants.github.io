@@ -63,7 +63,7 @@ GEM
     mini_magick (4.11.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    rack (1.6.10)
+    rack (1.6.13)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
